@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Wigle Visualizer</title>
+        <link rel="stylesheet" href="/static/leaflet/leaflet.css" />
+        <link rel="stylesheet" href="/static/leaflet/MarkerCluster.css" />
+        <link rel="stylesheet" href="/static/leaflet/MarkerCluster.Default.css" />
+        <style>{% block page_css %}{% endblock %}</style>
+    </head>
+    <body>
+        {% block content %}
+        {% endblock %}
+        <script src="/static/jquery-2.1.1.min.js"></script>
+        <script src="/static/leaflet/leaflet.js"></script>
+        <script src="/static/leaflet/leaflet.markercluster.js"></script>
+        <script src="/static/leaflet/heatmap.min.js"></script>
+        <script src="/static/leaflet/leaflet-heatmap.js"></script>
+        <script src="/static/application.js"></script>
+    </body>
+</html>
