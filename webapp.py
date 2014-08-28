@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+# Author: pidpawel
+# Copyright 2014
+# Dual license: MIT and Beerware
 from flask import Flask, render_template, jsonify, Markup, request
 from flask.json import JSONEncoder
 import csv
