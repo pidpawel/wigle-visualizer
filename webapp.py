@@ -23,7 +23,7 @@ class Record:
         self.lon = None
 
     def in_bounds(self, boundN, boundE, boundW, boundS):
-        return self.lat <= boundN and self.lat >= boundS and self.lon >= boundW and self.lon <= boundS
+        return boundN >= self.lat >= boundS and boundW <= self.lon <= boundE
 
     def __repr__(self):
         return '%s (%s)' % (self.ssid, self.mac)
